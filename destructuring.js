@@ -21,7 +21,12 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+let color = carDetails.color;
+let make = carDetails.make;
+let model = carDetails.model;
+let year = carDetails.year;
+
+
 
 
 
@@ -34,7 +39,10 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
+  
+  let {firstName, lastName, title} = obj;
+
+
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';

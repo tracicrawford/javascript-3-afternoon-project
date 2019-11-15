@@ -40,7 +40,11 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let arr = [];
+  for (var key in obj) {
+    arr.push(obj[key])
+  }
+  return arr.join("");
 }
 
 
@@ -53,8 +57,14 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
-
+function greaterThan10(obj) {
+  for(var key in obj) {
+    if(obj[key]>10){
+      obj[key]=0;
+    }
+  }
+  return obj;
+}
 
 
 ////////// PROBLEM 3 //////////
